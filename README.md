@@ -39,7 +39,7 @@ This project is an ESP32-based Bluetooth Serial LED Controller designed to allow
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/TheLonelyOtaku315/ESP32-LED-Controller.git
    ```
    Or download the project files and extract them.
 
@@ -100,6 +100,13 @@ This project is an ESP32-based Bluetooth Serial LED Controller designed to allow
 - **Bluetooth Not Connecting**: Ensure the ESP32 is powered and in range. Try unpairing and pairing again.
 - **Commands Not Working**: Verify the correct commands are sent through the terminal app.
 - **LEDs Not Responding**: Check wiring and ensure the LEDs are functional.
+
+---
+
+## Repository
+
+The source code and related files for this project are available on GitHub:
+[ESP32 LED Controller](https://github.com/TheLonelyOtaku315/ESP32-LED-Controller)
 
 ---
 
