@@ -9,7 +9,8 @@ This project is an ESP32-based Bluetooth Serial LED Controller designed to allow
 - **Bluetooth Connectivity**: Communicate with the ESP32 through Bluetooth for wireless control.
 - **LED Control**: Manage LED states (ON/OFF) and toggle modes based on received commands.
 - **Button Integration**: Read button states for additional physical control.
-- **Custom Commands**: Supports commands such as `POWER`, `ALTERNATE`, `+`, and `-` for advanced LED control.
+- **Custom Commands**: Supports commands such as `POWER`, `ALTERNATE`, `+`, `-`, and `TIMER` for advanced LED control.
+- **Timer Functionality**: Set a countdown timer to automatically turn off LEDs after a specified duration.
 - **Real-Time Status Update**: Uses USB Serial and Bluetooth Serial for device communication and status monitoring.
 
 ---
@@ -71,6 +72,7 @@ This project is an ESP32-based Bluetooth Serial LED Controller designed to allow
      - `ALTERNATE`: Switch LEDs in an alternating pattern.
      - `+`: Increase brightness (if PWM is implemented).
      - `-`: Decrease brightness (if PWM is implemented).
+     - `TIMER`: Set a countdown timer in seconds. The LEDs will turn off automatically when the timer ends.
 
 3. **Monitor via Serial**:
    - Open the Serial Monitor in the Arduino IDE to view logs and debug messages.
@@ -84,6 +86,7 @@ This project is an ESP32-based Bluetooth Serial LED Controller designed to allow
   - Checks Bluetooth connection status.
   - Monitors button states and updates the corresponding LED actions.
   - Processes received Bluetooth commands.
+  - Manages the timer functionality to power off LEDs after the specified duration.
 
 ---
 
@@ -119,10 +122,4 @@ This project is open-source and available under the MIT License. Feel free to us
 ## Acknowledgments
 
 Special thanks to the Arduino and ESP32 communities for providing extensive resources and support.
-
----
-
-## Contact
-
-For questions or feedback, please reach out to [Your Name/Email].
 
